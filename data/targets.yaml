@@ -1,0 +1,59 @@
+# Strategic repository targets.
+# Keep this file small and curated; do not turn it into a raw search dump.
+
+targets:
+  - repo: stacklok/toolhive
+    tier: main-target
+    domain: MCP security and developer tooling
+    influence_signals:
+      - active maintainers
+      - MCP and security relevance
+      - existing external contribution path
+    maintainer_activity: active
+    existing_trust:
+      merged_prs: []
+      open_prs:
+        - https://github.com/stacklok/toolhive/pull/5673
+      issues_filed: []
+    current_level: L2
+    next_move: wait for review, then look for L3 docs/test follow-up
+    l5_readiness: not-ready
+    risks:
+      - Go tooling may be unavailable locally
+
+  - repo: modelcontextprotocol/typescript-sdk
+    tier: main-target
+    domain: MCP TypeScript SDK
+    influence_signals:
+      - official MCP SDK
+      - high strategic relevance
+      - active development
+    maintainer_activity: active
+    existing_trust:
+      merged_prs: []
+      open_prs: []
+      issues_filed:
+        - https://github.com/modelcontextprotocol/typescript-sdk/issues/1126#issuecomment-4824844304
+    current_level: I3
+    next_move: prefer issue analysis until repository reopens PRs
+    l5_readiness: not-ready
+    risks:
+      - README says PRs are temporarily restricted
+
+  - repo: VoltAgent/voltagent
+    tier: watchlist
+    domain: AI agent framework and observability
+    influence_signals:
+      - active agent framework
+      - relevant observability and usage-accounting surface
+    maintainer_activity: active
+    existing_trust:
+      merged_prs: []
+      open_prs: []
+      issues_filed:
+        - https://github.com/VoltAgent/voltagent/issues/1360#issuecomment-4824840857
+    current_level: I3
+    next_move: watch maintainer response on usage semantics before attempting L4 fix
+    l5_readiness: not-ready
+    risks:
+      - usage semantics are contract-level and may need maintainer direction

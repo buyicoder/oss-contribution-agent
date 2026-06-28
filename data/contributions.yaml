@@ -1,0 +1,20 @@
+# Pull request contribution log.
+
+pull_requests:
+  - repo: stacklok/toolhive
+    url: https://github.com/stacklok/toolhive/pull/5673
+    level: L2
+    status: open
+    summary: Updated vMCP architecture docs and package documentation.
+    test_plan:
+      - local Go tooling was unavailable in the environment
+    follow_up: wait for maintainer review
+
+  - repo: pydantic/pydantic-ai
+    url: https://github.com/pydantic/pydantic-ai/pull/6101
+    level: L2
+    status: closed-duplicate
+    summary: Added Temporal installation instructions to durable execution docs.
+    test_plan:
+      - git diff --check
+    follow_up: avoid duplicate PRs by checking linked and historical PRs more aggressively

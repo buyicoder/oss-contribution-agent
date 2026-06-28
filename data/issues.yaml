@@ -1,0 +1,23 @@
+# Issue and comment contribution log.
+
+issue_actions:
+  - repo: omnigent-ai/omnigent
+    url: https://github.com/omnigent-ai/omnigent/issues/1321
+    level: I1
+    action: commented
+    summary: Noted that current CONTRIBUTING.md appears to document the requested supported development OS details.
+    follow_up: wait for maintainer confirmation
+
+  - repo: VoltAgent/voltagent
+    url: https://github.com/VoltAgent/voltagent/issues/1360#issuecomment-4824840857
+    level: I3
+    action: commented
+    summary: Added source-level analysis of provider-dependent usage semantics and suggested a safer contract split.
+    follow_up: watch for maintainer response before proposing code changes
+
+  - repo: modelcontextprotocol/typescript-sdk
+    url: https://github.com/modelcontextprotocol/typescript-sdk/issues/1126#issuecomment-4824844304
+    level: I3
+    action: commented
+    summary: Suggested a minimal docs location for testing MCP servers with InMemoryTransport while PRs are restricted.
+    follow_up: revisit when PRs reopen or maintainer confirms docs direction
